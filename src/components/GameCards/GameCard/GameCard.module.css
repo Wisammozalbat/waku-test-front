@@ -1,0 +1,57 @@
+.CardContainer {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.308);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.CardContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.308);
+}
+
+.CardContainer:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.308);
+}
+
+.ImageContainer {
+  width: 25rem;
+  height: 15rem;
+}
+
+.Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.Price {
+  margin-top: auto;
+  font-size: 1.2rem;
+}
+
+.Description {
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-primary-light-3);
+}

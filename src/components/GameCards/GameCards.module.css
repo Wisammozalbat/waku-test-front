@@ -1,0 +1,28 @@
+.CardsContainer {
+  padding: 2rem 5rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+.FilterOptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.FilterOption {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.FilterOption:hover {
+  background-color: var(--color-primary-light-2);
+}

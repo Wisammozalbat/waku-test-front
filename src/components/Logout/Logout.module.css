@@ -1,0 +1,26 @@
+.LogoutButtonContainer {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.LogoutButtonContainer:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 2rem black;
+}
+
+.LogoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}

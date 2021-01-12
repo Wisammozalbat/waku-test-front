@@ -1,0 +1,57 @@
+.Links {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  height: 100%;
+}
+
+.Link {
+  padding: 15px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+a.Link:hover {
+  color: var(--color-primary);
+}
+
+a.Link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  transition: all 0.2s;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+a.Link:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.Active {
+  background-color: lightgrey;
+  color: var(--color-primary);
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+}
+
+.Image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}

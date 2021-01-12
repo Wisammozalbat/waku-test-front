@@ -1,0 +1,51 @@
+version: "3.7"
+
+services:
+  backend:
+    container_name: waku_test_backend
+    restart: unless-stopped
+    build: ./test-back
+    ports:
+      - 4000:4000
+    env_file: ./test-back/.env
+    environment:
+      - NODE_ENV=production
+    networks:
+      - internal
+    depends_on:
+      - db
+
+  frontend:
+    container_name: waku_test_frontend
+    restart: unless-stopped
+    build: ./test-front
+    env_file: ./test-front/.env
+    environment:
+      - NODE_PATH=/app/src
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+    networks:
+      - internal
+
+  db:
+    container_name: waku_test_db
+    image: mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: test_db
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+    networks:
+      - internal
+
+networks:
+  internal:
+
+volumes:
+  mongo_data:
+  mongo_config:

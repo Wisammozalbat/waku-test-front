@@ -1,0 +1,35 @@
+.SearchContainer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(141, 141, 141);
+  /* padding: 1rem 2rem; */
+  border-radius: 100px;
+  margin-right: auto;
+  margin-left: 3rem;
+}
+
+.Input {
+  background-color: rgb(141, 141, 141);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: inherit;
+  margin-left: 2rem;
+}
+
+.SearchButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.SearchButtonContainer {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  padding: 0.8rem 1.5rem;
+}

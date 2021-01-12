@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,700;0,900;1,200;1,300;1,500;1,700;1,900");
+
+:root {
+  --color-primary: #2e2e2e;
+  --color-primary-light-1: rgb(194, 194, 194);
+  --color-primary-light-2: rgb(153, 153, 153);
+  --color-primary-light-3: rgba(22, 22, 22, 0.541);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary-light-2),
+    var(--color-primary-light-1)
+  );
+  color: white;
+}
+
+.Header {
+  height: 8vh;
+  background-color: var(--color-primary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  display: flex;
+  font-size: 3rem;
+  color: white;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Icon {
+  margin: 0 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.Icon,
+.Name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

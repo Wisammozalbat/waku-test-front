@@ -1,0 +1,21 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+}
+
+.SearchTitle {
+  width: 100%;
+  text-align: center;
+  padding: 5rem 2rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.NoGames {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
