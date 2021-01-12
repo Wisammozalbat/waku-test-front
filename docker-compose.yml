@@ -4,10 +4,10 @@ services:
   backend:
     container_name: waku_test_backend
     restart: unless-stopped
-    build: ./test-back
+    build: ./waku-test-back
     ports:
       - 4000:4000
-    env_file: ./test-back/.env
+    env_file: ./waku-test-back/.env
     environment:
       - NODE_ENV=production
     networks:
@@ -18,8 +18,8 @@ services:
   frontend:
     container_name: waku_test_frontend
     restart: unless-stopped
-    build: ./test-front
-    env_file: ./test-front/.env
+    build: ./waku-test-front
+    env_file: ./waku-test-front/.env
     environment:
       - NODE_PATH=/app/src
     ports:
